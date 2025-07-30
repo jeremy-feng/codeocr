@@ -1,0 +1,84 @@
+{
+  "LanguageDetection": {
+    "title": "Language Suggestion",
+    "description": "We noticed your browser language differs from the current site language. You can switch languages anytime 👉",
+    "countdown": "Closing in {countdown} seconds"
+  },
+  "Header": {
+    "GitHub": "GitHub"
+  },
+  "Footer": {
+    "Copyright": "Copyright © {year} Jeremy Feng. All rights reserved.",
+    "socialLinks": {
+      "github": "GitHub Repository",
+      "homepage": "Homepage",
+      "twitter": "Twitter",
+      "email": "Email"
+    },
+    "sections": {
+      "languages": "Languages",
+      "openSource": "Open Source",
+      "legalPrivacy": "Legal & Privacy"
+    },
+    "links": {
+      "codeocr": "CodeOCR",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service"
+    }
+  },
+  "Home": {
+    "title": "CodeOCR",
+    "tagLine": "Convert Code Screenshots into Copyable Text",
+    "description": "Upload a screenshot of code and transform it into copyable code text using advanced multimodal AI model."
+  },
+
+  "About": {
+    "title": "About",
+    "description": "About the site"
+  },
+  "TermsOfService": {
+    "title": "Terms of Service",
+    "description": "Terms of Service"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "description": "Privacy Policy"
+  },
+  "ImageUpload": {
+    "title": "Upload your code screenshot",
+    "subtitle": "Paste, drop, or click to upload",
+    "supportedFormats": "PNG, JPG, WebP",
+    "maxSize": "Max 5MB",
+    "errorInvalidFormat": "Please upload a valid image file (PNG, JPG, JPEG, WebP)",
+    "errorFileSize": "File size must be less than 5MB"
+  },
+  "CodeOCR": {
+    "processing": "Processing...",
+    "extractCode": "Extract Code",
+    "extractedCode": "Extracted Code",
+    "selectImageFirst": "Please select an image first",
+    "apiKeyRequired": "Please configure your API key in API Settings first",
+    "modelNameRequired": "Please configure your model name in API Settings first",
+    "extractSuccess": "Code extracted successfully!",
+    "extractFailed": "Failed to process image",
+    "noCodeDetected": "No code detected"
+  },
+  "ThemeToggle": {
+    "toggleTheme": "Toggle theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "APISettings": {
+    "title": "API Settings",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "API Key",
+    "apiBase": "API Base URL",
+    "apiBasePlaceholder": "https://api.openai.com/v1",
+    "modelName": "Model Name",
+    "modelNamePlaceholder": "Enter a vision LLM model name",
+    "save": "Save",
+    "settingsSaved": "Settings saved successfully",
+    "settingsFailed": "Failed to save settings"
+  }
+}

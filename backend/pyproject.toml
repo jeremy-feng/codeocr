@@ -1,0 +1,33 @@
+[project]
+name = "codeocr"
+version = "0.1.0"
+description = "Convert code screenshots to copyable text."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.13",
+    "langgraph>=0.2.0",
+    "langchain>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "python-multipart>=0.0.20",
+    "uvicorn>=0.34.3",
+    "pydantic>=2.0.0",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true
+
+[tool.ruff]
+lint.select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "I",    # isort
+    "D",    # pydocstyle
+    "D401", # First line should be in imperative mood
+    "T201",
+    "UP",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

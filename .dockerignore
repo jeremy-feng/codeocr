@@ -1,0 +1,27 @@
+# Git and IDE
+.git
+.vscode
+.DS_Store
+
+# Dependencies
+frontend/node_modules
+backend/.venv
+
+# Build outputs
+frontend/.next
+
+# Python cache
+__pycache__
+*.pyc
+
+# Environment files
+.env*
+
+# Documentation
+README.md
+LICENSE
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore

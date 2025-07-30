@@ -1,0 +1,84 @@
+{
+  "LanguageDetection": {
+    "title": "语言建议",
+    "description": "检测到您的浏览器语言和当前语言不一样，您随时都可切换语言 👉",
+    "countdown": "将在 {countdown} 秒后关闭"
+  },
+  "Header": {
+    "GitHub": "GitHub"
+  },
+  "Footer": {
+    "Copyright": "版权所有 © {year} Jeremy Feng。保留所有权利。",
+    "socialLinks": {
+      "github": "GitHub 仓库",
+      "homepage": "个人主页",
+      "twitter": "Twitter",
+      "email": "邮箱"
+    },
+    "sections": {
+      "languages": "语言",
+      "openSource": "开源项目",
+      "legalPrivacy": "法律与隐私"
+    },
+    "links": {
+      "codeocr": "CodeOCR",
+      "privacyPolicy": "隐私政策",
+      "termsOfService": "服务条款"
+    }
+  },
+  "Home": {
+    "title": "CodeOCR",
+    "tagLine": "将代码截图转换为可复制的代码文本",
+    "description": "上传代码截图，使用多模态大模型将其转换为可复制的代码文本"
+  },
+
+  "About": {
+    "title": "关于",
+    "description": "关于本站"
+  },
+  "TermsOfService": {
+    "title": "服务条款",
+    "description": "服务条款"
+  },
+  "PrivacyPolicy": {
+    "title": "隐私政策",
+    "description": "隐私政策"
+  },
+  "ImageUpload": {
+    "title": "上传您的代码截图",
+    "subtitle": "粘贴、拖拽或点击上传",
+    "supportedFormats": "PNG, JPG, WebP",
+    "maxSize": "最大 5MB",
+    "errorInvalidFormat": "请上传有效的图片文件 (PNG, JPG, JPEG, WebP)",
+    "errorFileSize": "文件大小必须小于 5MB"
+  },
+  "CodeOCR": {
+    "processing": "处理中...",
+    "extractCode": "提取代码",
+    "extractedCode": "识别结果",
+    "selectImageFirst": "请先选择一张图片",
+    "apiKeyRequired": "请先在 API 设置中配置您的 API 密钥",
+    "modelNameRequired": "请先在 API 设置中配置您的模型名称",
+    "extractSuccess": "代码提取成功！",
+    "extractFailed": "处理图片失败",
+    "noCodeDetected": "未检测到代码"
+  },
+  "ThemeToggle": {
+    "toggleTheme": "切换主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "跟随系统"
+  },
+  "APISettings": {
+    "title": "API 设置",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "API Key",
+    "apiBase": "API Base URL",
+    "apiBasePlaceholder": "https://api.openai.com/v1",
+    "modelName": "模型名称",
+    "modelNamePlaceholder": "输入一个支持视觉识别的模型名称",
+    "save": "保存",
+    "settingsSaved": "设置保存成功",
+    "settingsFailed": "设置保存失败"
+  }
+}

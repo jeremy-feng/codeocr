@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Debug Full Stack",
+      "configurations": [
+        "Next.js: debug client-side",
+        "Next.js: debug server-side",
+        "Python: debug backend"
+      ],
+      "stopAll": true,
+      "presentation": {
+        "hidden": false,
+        "group": "",
+        "order": 1
+      }
+    }
+  ],
+  "configurations": [
+    {
+      "name": "Next.js: debug client-side",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["run", "dev"],
+      "cwd": "${workspaceFolder}/frontend",
+      "skipFiles": ["<node_internals>/**"],
+      "env": {
+        "NODE_OPTIONS": "--inspect=9229"
+      },
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "serverReadyAction": {
+        "pattern": "- Local:\\s+([^\\s]+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    },
+    {
+      "name": "Next.js: debug server-side",
+      "type": "node",
+      "request": "attach",
+      "port": 9230,
+      "skipFiles": ["<node_internals>/**"],
+      "localRoot": "${workspaceFolder}/frontend",
+      "remoteRoot": "${workspaceFolder}/frontend",
+      "restart": true,
+      "timeout": 30000
+    },
+    {
+      "name": "Python: debug backend",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/main.py",
+      "cwd": "${workspaceFolder}/backend",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "env": {
+        "UV_VENV": "${workspaceFolder}/backend/.venv"
+      }
+    }
+  ]
+}

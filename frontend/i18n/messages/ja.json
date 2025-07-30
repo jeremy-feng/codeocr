@@ -1,0 +1,84 @@
+{
+  "LanguageDetection": {
+    "title": "言語の提案",
+    "description": "ブラウザの言語設定が現在のサイト言語と異なっています。いつでも言語を切り替えることができます 👉",
+    "countdown": "閉じるまで {countdown} 秒"
+  },
+  "Header": {
+    "GitHub": "GitHub"
+  },
+  "Footer": {
+    "Copyright": "Copyright © {year} Jeremy Feng. All rights reserved.",
+    "socialLinks": {
+      "github": "GitHub リポジトリ",
+      "homepage": "ホームページ",
+      "twitter": "Twitter",
+      "email": "メール"
+    },
+    "sections": {
+      "languages": "言語",
+      "openSource": "オープンソース",
+      "legalPrivacy": "法的事項とプライバシー"
+    },
+    "links": {
+      "codeocr": "CodeOCR",
+      "privacyPolicy": "プライバシーポリシー",
+      "termsOfService": "サービス利用規約"
+    }
+  },
+  "Home": {
+    "title": "CodeOCR",
+    "tagLine": "コードのスクリーンショットをコピー可能なコードテキストに変換",
+    "description": "コードのスクリーンショットをアップロードして、多モーダル大規模モデルを使用してコピー可能なコードテキストに変換します"
+  },
+
+  "About": {
+    "title": "サイトについて",
+    "description": "サイトについて"
+  },
+  "TermsOfService": {
+    "title": "サービス利用規約",
+    "description": "サービス利用規約"
+  },
+  "PrivacyPolicy": {
+    "title": "プライバシーポリシー",
+    "description": "プライバシーポリシー"
+  },
+  "ImageUpload": {
+    "title": "コードのスクリーンショットをアップロード",
+    "subtitle": "貼り付け、ドラッグ、またはクリックしてアップロード",
+    "supportedFormats": "PNG, JPG, WebP",
+    "maxSize": "最大 5MB",
+    "errorInvalidFormat": "有効な画像ファイルをアップロードしてください (PNG, JPG, JPEG, WebP)",
+    "errorFileSize": "ファイルサイズは 5MB 未満である必要があります"
+  },
+  "CodeOCR": {
+    "processing": "処理中...",
+    "extractCode": "コード抽出",
+    "extractedCode": "抽出されたコード",
+    "selectImageFirst": "まず画像を選択してください",
+    "apiKeyRequired": "まずAPI設定でAPIキーを設定してください",
+    "modelNameRequired": "まずAPI設定でモデル名を設定してください",
+    "extractSuccess": "コードの抽出に成功しました！",
+    "extractFailed": "画像の処理に失敗しました",
+    "noCodeDetected": "コードが検出されませんでした"
+  },
+  "ThemeToggle": {
+    "toggleTheme": "テーマを切り替え",
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  },
+  "APISettings": {
+    "title": "API 設定",
+    "apiKey": "API Key",
+    "apiKeyPlaceholder": "API Key",
+    "apiBase": "API Base URL",
+    "apiBasePlaceholder": "https://api.openai.com/v1",
+    "modelName": "モデル名",
+    "modelNamePlaceholder": "画像認識に対応したモデル名を入力",
+    "save": "保存",
+    "settingsSaved": "設定が正常に保存されました",
+    "settingsFailed": "設定の保存に失敗しました"
+  }
+}
