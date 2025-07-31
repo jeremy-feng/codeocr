@@ -67,7 +67,7 @@ export async function POST(request: NextRequest) {
       model_name: modelName,
     };
 
-    const backendUrl = process.env.BACKEND_URL || "http://127.0.0.1:8000";
+    const backendUrl = process.env.BACKEND_URL || "http://localhost:8000";
 
     const response = await fetch(`${backendUrl}/api/codeocr`, {
       method: "POST",
