@@ -1,6 +1,8 @@
 services:
   codeocr:
-    image: ghcr.io/jeremy-feng/codeocr:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: codeocr
     expose:
       - "8000"
