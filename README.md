@@ -52,7 +52,7 @@ Convert code screenshots to copyable text using AI.
 
 2. **Deploy with Docker Compose**
    ```bash
-   docker compose up codeocr -d
+   docker compose up -d
    ```
 
 ## License
