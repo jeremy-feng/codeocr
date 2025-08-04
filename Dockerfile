@@ -33,7 +33,7 @@ RUN uv sync --frozen --no-dev
 # Stage 3: Production image with minimal runtime
 FROM python:3.12-slim AS production
 
-# Install only Node.js runtime (no npm/build tools) and bash
+# Install Node.js and bash
 RUN apt-get update && \
     apt-get install -y curl bash && \
     curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
@@ -54,9 +54,10 @@ COPY --from=backend-builder /app/.venv /app/.venv
 COPY backend/*.py ./
 
 # Copy built frontend from previous stage
-COPY --from=frontend-builder /app/frontend/.next/standalone ./
-COPY --from=frontend-builder /app/frontend/.next/static ./.next/static
+COPY --from=frontend-builder /app/frontend/.next ./.next
 COPY --from=frontend-builder /app/frontend/public ./public
+COPY --from=frontend-builder /app/frontend/package.json ./package.json
+COPY --from=frontend-builder /app/frontend/node_modules ./node_modules
 
 # Expose ports
 EXPOSE 8000 3000
@@ -73,7 +74,7 @@ ENV PYTHONPATH=/app \
 RUN echo '#!/bin/bash\n\
     uv run uvicorn main:app --host $UVICORN_HOST --port $UVICORN_PORT &\n\
     BACKEND_PID=$!\n\
-    PORT=3000 node server.js &\n\
+    cd /app && PORT=3000 npx next start &\n\
     FRONTEND_PID=$!\n\
     wait $BACKEND_PID $FRONTEND_PID' > /app/start.sh && chmod +x /app/start.sh
 
