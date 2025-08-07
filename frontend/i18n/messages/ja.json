@@ -57,8 +57,8 @@
     "extractCode": "コード抽出",
     "extractedCode": "抽出されたコード",
     "selectImageFirst": "まず画像を選択してください",
-    "apiKeyRequired": "まずAPI設定でAPIキーを設定してください",
-    "modelNameRequired": "まずAPI設定でモデル名を設定してください",
+    "apiKeyRequired": "まず API 設定で API キーを設定してください",
+    "modelNameRequired": "まず API 設定でモデル名を設定してください",
     "extractSuccess": "コードの抽出に成功しました！",
     "extractFailed": "画像の処理に失敗しました",
     "noCodeDetected": "コードが検出されませんでした"
@@ -79,6 +79,7 @@
     "modelNamePlaceholder": "画像認識に対応したモデル名を入力",
     "save": "保存",
     "settingsSaved": "設定が正常に保存されました",
-    "settingsFailed": "設定の保存に失敗しました"
+    "settingsFailed": "設定の保存に失敗しました",
+    "allFieldsRequired": "API 設定を完了してください"
   }
 }
