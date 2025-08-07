@@ -79,6 +79,7 @@
     "modelNamePlaceholder": "输入一个支持视觉识别的模型名称",
     "save": "保存",
     "settingsSaved": "设置保存成功",
-    "settingsFailed": "设置保存失败"
+    "settingsFailed": "设置保存失败",
+    "allFieldsRequired": "请配置完整的 API"
   }
 }

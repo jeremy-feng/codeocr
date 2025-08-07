@@ -79,6 +79,7 @@
     "modelNamePlaceholder": "Enter a vision LLM model name",
     "save": "Save",
     "settingsSaved": "Settings saved successfully",
-    "settingsFailed": "Failed to save settings"
+  "settingsFailed": "Failed to save settings",
+  "allFieldsRequired": "Please complete API configuration"
   }
 }
