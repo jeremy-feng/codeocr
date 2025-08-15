@@ -54,10 +54,9 @@ COPY --from=backend-builder /app/.venv /app/.venv
 COPY backend/*.py ./
 
 # Copy built frontend from previous stage
-COPY --from=frontend-builder /app/frontend/.next ./.next
-COPY --from=frontend-builder /app/frontend/public ./public
-COPY --from=frontend-builder /app/frontend/package.json ./package.json
-COPY --from=frontend-builder /app/frontend/node_modules ./node_modules
+COPY --from=frontend-builder /app/frontend/.next/standalone /app/
+COPY --from=frontend-builder /app/frontend/public /app/public
+COPY --from=frontend-builder /app/frontend/.next/static /app/.next/static
 
 # Expose ports
 EXPOSE 8000 3000
@@ -68,13 +67,14 @@ ENV PYTHONPATH=/app \
     UVICORN_PORT=8000 \
     PATH="/app/.venv/bin:$PATH" \
     VIRTUAL_ENV=/app/.venv \
-    NODE_ENV=production
+    NODE_ENV=production \
+    PORT=3000
 
 # Create startup script for better process management
 RUN echo '#!/bin/bash\n\
     uv run uvicorn main:app --host $UVICORN_HOST --port $UVICORN_PORT &\n\
     BACKEND_PID=$!\n\
-    cd /app && PORT=3000 npx next start &\n\
+    node /app/server.js &\n\
     FRONTEND_PID=$!\n\
     wait $BACKEND_PID $FRONTEND_PID' > /app/start.sh && chmod +x /app/start.sh
 
