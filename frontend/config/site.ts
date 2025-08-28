@@ -3,7 +3,7 @@ import { SiteConfig } from "@/types/siteConfig";
 export const BASE_URL: string = process.env.NEXT_PUBLIC_SITE_URL || '';
 export const SOURCE_CODE_URL: string = "https://github.com/jeremy-feng/codeocr";
 
-const TWITTER_URL: string = "https://x.com/mrfc17072574";
+const TWITTER_URL: string = "https://x.com/intent/follow?screen_name=JeremyFeng98";
 const EMAIL_URL: string = "mailto:jeremy-feng@qq.com";
 const GITHUB_URL: string = "https://github.com/jeremy-feng/codeocr";
 const HOMEPAGE_URL: string = "https://www.fengchao.pro";
